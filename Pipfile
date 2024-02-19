@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+boto3 = "*"
+python-dotenv = "*"
+psycopg = {extras = ["binary", "pool"], version = "*"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
