@@ -61,7 +61,9 @@ if __name__ == "__main__":
         stdev_time = stdev(time_counter)
 
         with open("./output/load_test_result.csv", mode="a") as f:
-            f.write("\n".join(f"{threads},{max_time:0.4f},{min_time:0.4f},{mean_time:0.4f},{median_time:0.4f},{stdev_time:0.4f}"))
+            f.write(
+                f"{threads},{max_time:0.4f},{min_time:0.4f},{mean_time:0.4f},{median_time:0.4f},{stdev_time:0.4f}"
+            )
             f.write("\n")
 
         print("-------------------------------Results----------------------------")
